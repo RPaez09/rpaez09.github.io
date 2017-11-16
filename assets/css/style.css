@@ -22,6 +22,8 @@ body {
 
 .navbar .linkbar {
     float: right;
+    position: relative;
+    right: 35px;
 }
 
 .navbar .linkbar li {
@@ -52,6 +54,7 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0px 2px 2px rgba(50, 50, 50, 1);
+    background-attachment: fixed;
 }
 
 .jumbotron h1 {
