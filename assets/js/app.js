@@ -1,6 +1,10 @@
 /* Richard Paez | 2017 */
 
 var nav = document.getElementById("navigation-main");
+var jumbo = document.getElementById("jumbotron-main");
+var jumboH1 = document.getElementById("jumboH1");
+var jumboH2 = document.getElementById("jumboH2");
+
 var navExpanded = true;
 
 window.addEventListener('scroll', function(e) {
@@ -16,5 +20,9 @@ window.addEventListener('scroll', function(e) {
         nav.style.paddingBottom = "15px";
         navExpanded = true;
     }
+
+    jumboH1.style.top = (window.scrollY * .2) + "px";
+    jumboH2.style.top = (window.scrollY * .2) + "px";
+    jumbo.style.backgroundPositionY = "-" + window.scrollY + "px";
 
 });
