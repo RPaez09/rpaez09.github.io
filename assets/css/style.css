@@ -6,6 +6,10 @@ body {
 .navbar {
     height: 70px;
     padding: 15px 25px;
+    position: fixed;
+    width: 100%;
+    background-color: #FFFFFF;
+    transition: .3s ease-out;
 }
 
 .navbar .logo {
@@ -52,7 +56,7 @@ body {
 
 .jumbotron h1 {
     font-size: 80px;
-    padding-top: 100px;
+    padding-top: 180px;
     cursor: default;
 }
 
