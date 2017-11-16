@@ -1,5 +1,6 @@
 body {
     background-color: #000000;
+    font-family: 'Raleway', sans-serif;
 }
 
 .navbar {
@@ -12,8 +13,26 @@ body {
     font-size: 36px;
     font-weight: bold;
     line-height: 60px;
+    display: inline-block
 }
 
 .navbar .linkbar {
     float: right;
+}
+
+.navbar .linkbar li {
+    display: inline-block;
+    font-size: 26px;
+    margin: 20px 15px;
+}
+
+.navbar .linkbar li:last-child {
+    margin-right: 0;
+} 
+
+.jumbotron {
+    height: 700px;
+    background-image: url("../images/main-bg.jpg");
+    background-position: -190px -230px;
+    background-repeat: no-repeat;
 }
