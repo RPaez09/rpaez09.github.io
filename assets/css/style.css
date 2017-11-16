@@ -68,7 +68,12 @@ body {
 
 .footer {
     display: flex;
-    padding: 30px 15px;
-    min-height: 350px;
+    padding: 40px 25px;
+    min-height: 250px;
     background-color: #19141a;
+    color: #FFFFFF;
+}
+
+.footer h3 {
+    font-size: 26px;
 }
