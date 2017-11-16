@@ -1,0 +1,19 @@
+body {
+    background-color: #000000;
+}
+
+.navbar {
+    height: 70px;
+    background-color: #fbfbfb;
+    padding: 15px 25px;
+}
+
+.navbar .logo {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.navbar .linkbar {
+    float: right;
+}
