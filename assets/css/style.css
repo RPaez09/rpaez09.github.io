@@ -81,24 +81,24 @@ body {
     display: hidden;
 }
 
-.footer {
+footer {
     padding: 40px 25px;
     min-height: 250px;
     background-color: #19141a;
     color: #FFFFFF;
 }
 
-.footer h3 {
+footer h3 {
     font-size: 26px;
     margin-bottom: 30px;
 }
 
-.footer .social-icons a {
+footer .social-icons a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.footer .icon-wrapper {
+footer .icon-wrapper {
     height: 50px;
     width: 50px;
     border-radius: 50px;
@@ -109,24 +109,24 @@ body {
     overflow: hidden;
 }
 
-.footer .icon-wrapper.gh{
+footer .icon-wrapper.gh{
     background-color: #24292e;
 }
 
-.footer .icon-wrapper.linkedin{
+footer .icon-wrapper.linkedin{
     background-color: #0077b5;
 }
 
-.footer .icon-wrapper.codepen{
+footer .icon-wrapper.codepen{
     background-color: #343338;
 }
 
-.footer .icon-wrapper:hover {
+footer .icon-wrapper:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     width: 160px;
 }
 
-.footer .icon-wrapper i {
+footer .icon-wrapper i {
     padding-top: 10px;
     padding-left: 10px;
 }
