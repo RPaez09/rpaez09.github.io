@@ -77,10 +77,6 @@ body {
     min-height: 350px; 
 }
 
-.section {
-    display: hidden;
-}
-
 footer {
     padding: 40px 25px;
     min-height: 250px;

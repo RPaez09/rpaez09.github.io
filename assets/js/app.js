@@ -26,3 +26,57 @@ window.addEventListener('scroll', function(e) {
     jumbo.style.backgroundPositionY = "-" + window.scrollY + "px";
 
 });
+//
+/* Now for switching sections */
+//
+var aboutBtn = document.getElementById("about-btn");
+var portfolioBtn = document.getElementById("portfolio-btn");
+var contactBtn = document.getElementById("contact-btn");
+
+var aboutSection = document.getElementById("about-section");
+var portfolioSection = document.getElementById("portfolio-section");
+var contactSection = document.getElementById("contact-section");
+
+var activeSection = "about";
+
+function toggleSection(newSection){
+
+    if(newSection != activeSection){
+        
+        switch(newSection){
+            
+            case "about":
+                portfolioSection.style.display = "none";
+                contactSection.style.display = "none";
+                aboutSection.style.display = "block";
+                activeSection = "about";
+                break;
+
+            case "portfolio":
+                aboutSection.style.display = "none";
+                contactSection.style.display = "none";
+                portfolioSection.style.display = "block";
+                activeSection = "portfolio";
+                break;
+
+            case "contact":
+                aboutSection.style.display = "none";
+                portfolioSection.style.display = "none";
+                contactSection.style.display = "block";
+                activeSection = "contact";
+                break;
+        }
+    }
+}
+
+aboutBtn.addEventListener("click", function(e){
+    toggleSection("about");
+});
+
+portfolioBtn.addEventListener("click", function(e){
+    toggleSection("portfolio");
+});
+
+contactBtn.addEventListener("click", function(e){
+    toggleSection("contact");
+});
