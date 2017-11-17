@@ -21,8 +21,8 @@ window.addEventListener('scroll', function(e) {
         navExpanded = true;
     }
 
-    jumboH1.style.top = (window.scrollY * .2) + "px";
-    jumboH2.style.top = (window.scrollY * .2) + "px";
+    jumboH1.style.top = (window.scrollY * .4) + "px";
+    jumboH2.style.top = (window.scrollY * .4) + "px";
     jumbo.style.backgroundPositionY = "-" + window.scrollY + "px";
 
 });
