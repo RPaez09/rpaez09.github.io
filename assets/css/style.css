@@ -78,7 +78,6 @@ body {
 }
 
 .footer {
-    display: flex;
     padding: 40px 25px;
     min-height: 250px;
     background-color: #19141a;
@@ -87,4 +86,43 @@ body {
 
 .footer h3 {
     font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.footer .social-icons a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer .icon-wrapper {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.footer .icon-wrapper.gh{
+    background-color: #24292e;
+}
+
+.footer .icon-wrapper.linkedin{
+    background-color: #0077b5;
+}
+
+.footer .icon-wrapper.codepen{
+    background-color: #343338;
+}
+
+.footer .icon-wrapper:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 160px;
+}
+
+.footer .icon-wrapper i {
+    padding-top: 10px;
+    padding-left: 10px;
 }
