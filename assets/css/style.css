@@ -81,6 +81,30 @@ body {
 .content h2 {
     font-size: 26px;
     font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.about-left {
+    order: 0;
+    flex-grow: 1;
+}
+
+.about-left img {
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.about-right {
+    order: 1;
+    flex-grow: 3;
+    flex-shrink: 1;
 }
 
 footer {
