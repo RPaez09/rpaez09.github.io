@@ -42,27 +42,41 @@ var activeSection = "about";
 function toggleSection(newSection){
 
     if(newSection != activeSection){
+
+        switch(activeSection){
+            case "about":
+                aboutSection.style.display = "none";
+                aboutBtn.classList.remove("active");
+                break;
+            
+            case "portfolio":
+                portfolioSection.style.display = "none";
+                portfolioBtn.classList.remove("active");
+                break;
+
+            case "contact":
+                contactSection.style.display = "none";
+                contactBtn.classList.remove("active");
+                break;
+        }
         
         switch(newSection){
             
             case "about":
-                portfolioSection.style.display = "none";
-                contactSection.style.display = "none";
                 aboutSection.style.display = "block";
                 activeSection = "about";
+                aboutBtn.classList.add("active");
                 break;
 
             case "portfolio":
-                aboutSection.style.display = "none";
-                contactSection.style.display = "none";
                 portfolioSection.style.display = "block";
+                portfolioBtn.classList.add("active");
                 activeSection = "portfolio";
                 break;
 
             case "contact":
-                aboutSection.style.display = "none";
-                portfolioSection.style.display = "none";
                 contactSection.style.display = "block";
+                contactBtn.classList.add("active");
                 activeSection = "contact";
                 break;
         }
