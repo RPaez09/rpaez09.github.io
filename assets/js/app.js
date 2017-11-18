@@ -24,8 +24,14 @@ window.addEventListener('scroll', function(e) {
         navExpanded = true;
     }
 
-    jumboH1.style.top = (window.scrollY * .4) + "px";
-    jumboH2.style.top = (window.scrollY * .4) + "px";
+    if(window.scrollY * .4 > 110){
+        jumboH1.style.top = "110px";
+    }
+    else{
+        jumboH1.style.top = (window.scrollY * .4) + "px";
+        jumboH2.style.top = (window.scrollY * .4) + "px";
+        
+    }
     jumbo.style.backgroundPositionY = "-" + window.scrollY + "px";
 
 });
