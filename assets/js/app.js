@@ -98,7 +98,3 @@ portfolioBtn.addEventListener("click", function(e){
 contactBtn.addEventListener("click", function(e){
     toggleSection("contact");
 });
-
-//
-/* Hover animations on footer links */
-//

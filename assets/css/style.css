@@ -108,6 +108,21 @@ body {
     flex-shrink: 3;
 }
 
+.portfolio-content {
+    padding: 25px 25px -10px 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.portfolio-child {
+    margin: 0 25px 50px 25px;
+    height: 250px;
+    width: 300px;
+    background-color: #888888; 
+}
+
 footer {
     padding: 40px 25px;
     min-height: 250px;
