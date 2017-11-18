@@ -1,5 +1,8 @@
 /* Richard Paez | 2017 */
 
+//
+/* Menu growing/shrinking + parallax effects */
+//
 var nav = document.getElementById("navigation-main");
 var jumbo = document.getElementById("jumbotron-main");
 var jumboH1 = document.getElementById("jumboH1");
@@ -26,8 +29,9 @@ window.addEventListener('scroll', function(e) {
     jumbo.style.backgroundPositionY = "-" + window.scrollY + "px";
 
 });
+
 //
-/* Now for switching sections */
+/* Switching sections */
 //
 var aboutBtn = document.getElementById("about-btn");
 var portfolioBtn = document.getElementById("portfolio-btn");
@@ -94,3 +98,7 @@ portfolioBtn.addEventListener("click", function(e){
 contactBtn.addEventListener("click", function(e){
     toggleSection("contact");
 });
+
+//
+/* Hover animations on footer links */
+//
