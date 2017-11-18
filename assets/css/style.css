@@ -87,13 +87,14 @@ body {
 .about-content {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: flex-start;
 }
 
 .about-left {
     order: 0;
-    flex-grow: 1;
+    flex-grow: 3;
+    flex-shrink: 3;
 }
 
 .about-left img {
@@ -103,8 +104,8 @@ body {
 
 .about-right {
     order: 1;
-    flex-grow: 3;
-    flex-shrink: 1;
+    flex-grow: 9;
+    flex-shrink: 3;
 }
 
 footer {
@@ -165,4 +166,12 @@ footer .icon-wrapper:hover {
 footer .icon-wrapper i {
     padding-top: 10px;
     padding-left: 10px;
+}
+
+@media screen and (max-width: 770px) {
+    
+    .about-content {
+        flex-wrap: wrap;
+    }
+
 }
