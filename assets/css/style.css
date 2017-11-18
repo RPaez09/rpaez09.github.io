@@ -104,7 +104,7 @@ body {
 
 .about-right {
     order: 1;
-    flex-grow: 9;
+    flex-grow: 6;
     flex-shrink: 3;
 }
 
@@ -114,6 +114,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .portfolio-child {
