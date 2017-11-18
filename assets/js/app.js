@@ -10,31 +10,33 @@ var jumboH2 = document.getElementById("jumboH2");
 
 var navExpanded = true;
 
-window.addEventListener('scroll', function(e) {
-    
-    if( window.scrollY >= 20 && navExpanded == true ){
-        nav.style.paddingTop = 0;
-        nav.style.paddingBottom = 0;
-        navExpanded = false;
-    }
-
-    else if ( window.scrollY == 0 && navExpanded == false ){
-        nav.style.paddingTop = "15px";
-        nav.style.paddingBottom = "15px";
-        navExpanded = true;
-    }
-
-    if(window.scrollY * .4 > 110){
-        jumboH1.style.top = "110px";
-    }
-    else{
-        jumboH1.style.top = (window.scrollY * .4) + "px";
-        jumboH2.style.top = (window.scrollY * .4) + "px";
+if(window.outerWidth > 480){
+    window.addEventListener('scroll', function(e) {
         
-    }
-    jumbo.style.backgroundPositionY = "-" + window.scrollY + "px";
+        if( window.scrollY >= 20 && navExpanded == true ){
+            nav.style.paddingTop = 0;
+            nav.style.paddingBottom = 0;
+            navExpanded = false;
+        }
 
-});
+        else if ( window.scrollY == 0 && navExpanded == false ){
+            nav.style.paddingTop = "15px";
+            nav.style.paddingBottom = "15px";
+            navExpanded = true;
+        }
+
+        if(window.scrollY * .4 > 110){
+            jumboH1.style.top = "110px";
+        }
+        else{
+            jumboH1.style.top = (window.scrollY * .4) + "px";
+            jumboH2.style.top = (window.scrollY * .4) + "px";
+            
+        }
+        jumbo.style.backgroundPositionY = "-" + window.scrollY + "px";
+
+    });
+}
 
 //
 /* Switching sections */

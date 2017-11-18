@@ -189,4 +189,8 @@ footer .icon-wrapper i {
         flex-wrap: wrap;
     }
 
+    .navbar .linkbar li {
+        font-size: 18px;
+    }
+
 }
