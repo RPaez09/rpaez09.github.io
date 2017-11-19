@@ -231,5 +231,16 @@ footer .icon-wrapper i {
     .jumbotron h2 {
         font-size: 35px;
     }
-    
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .about-content {
+        padding: 5px 25px 0 0;
+    }
+
+    .portfolio-content {
+        padding: 5px 25px 0 25px;
+    }
 }
