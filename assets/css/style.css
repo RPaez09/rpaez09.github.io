@@ -202,6 +202,14 @@ footer .icon-wrapper i {
     padding-left: 10px;
 }
 
+
+@media screen and (max-width: 817px) {
+    
+    .portfolio-content {
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 770px) {
     
     .about-content {
@@ -214,9 +222,14 @@ footer .icon-wrapper i {
 
 }
 
-@media screen and (max-width: 817px) {
-    
-    .portfolio-content {
-        justify-content: center;
+@media screen and (max-width: 550px) {
+
+    .jumbotron h1 {
+        font-size: 65px;
     }
+
+    .jumbotron h2 {
+        font-size: 35px;
+    }
+    
 }
