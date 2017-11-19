@@ -220,6 +220,10 @@ footer .icon-wrapper i {
         font-size: 18px;
     }
 
+    footer .icon-wrapper {
+        width: 160px;
+    }
+
 }
 
 @media screen and (max-width: 550px) {
