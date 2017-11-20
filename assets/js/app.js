@@ -10,7 +10,6 @@ var jumboH2 = document.getElementById("jumboH2");
 
 var navExpanded = true;
 
-//if(window.outerWidth > 480){
 window.addEventListener('scroll', function(e) {
         
         if( window.scrollY >= 20 && navExpanded == true ){
@@ -34,7 +33,6 @@ window.addEventListener('scroll', function(e) {
         jumbo.style.backgroundPositionY = "-" + window.scrollY + "px";
 
     });
-//}
 
 //
 /* Switching sections */
