@@ -10,8 +10,8 @@ var jumboH2 = document.getElementById("jumboH2");
 
 var navExpanded = true;
 
+//if(window.outerWidth > 480){
 window.addEventListener('scroll', function(e) {
-    if(window.outerWidth > 480){
         
         if( window.scrollY >= 20 && navExpanded == true ){
             nav.classList.add("shrink");
@@ -23,8 +23,8 @@ window.addEventListener('scroll', function(e) {
             navExpanded = true;
         }
 
-        if(window.scrollY * .4 > 110){
-            jumboH1.style.top = "110px";
+        if(window.scrollY * .4 > 100){
+            jumboH1.style.top = "100px";
         }
         else{
             jumboH1.style.top = (window.scrollY * .4) + "px";
@@ -33,8 +33,8 @@ window.addEventListener('scroll', function(e) {
         }
         jumbo.style.backgroundPositionY = "-" + window.scrollY + "px";
 
-    }
-});
+    });
+//}
 
 //
 /* Switching sections */
