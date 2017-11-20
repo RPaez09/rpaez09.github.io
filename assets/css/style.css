@@ -8,7 +8,7 @@ body {
     padding: 15px 25px;
     position: fixed;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: rgba(0,0,0,0);
     transition: .3s ease-out;
     z-index: 99999;
 }
@@ -19,6 +19,7 @@ body {
     line-height: 60px;
     display: inline-block;
     cursor: default;
+    color: #FFFFFF;
 }
 
 .navbar .linkbar {
@@ -33,19 +34,42 @@ body {
     margin: 20px 15px;
     transition: .2s ease-in-out;
     cursor: default;
+    color: #FFFFFF;
 }
 
 .navbar .linkbar li:hover {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #FFFFFF;
 }
 
 .navbar .linkbar li.active {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #FFFFFF;
 }
 
 .navbar .linkbar li:last-child {
     margin-right: 0;
 } 
+
+.navbar.shrink {
+    padding: 0 25px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.navbar.shrink .logo{
+    color: #000000;
+}
+
+.navbar.shrink .linkbar li {
+    color: #000000;
+}
+
+.navbar.shrink .linkbar li:hover {
+    border-bottom: 3px solid black;
+}
+
+.navbar.shrink .linkbar li.active {
+    border-bottom: 3px solid black;
+}
 
 .jumbotron {
     height: 450px;

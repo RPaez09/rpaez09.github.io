@@ -14,16 +14,12 @@ window.addEventListener('scroll', function(e) {
     if(window.outerWidth > 480){
         
         if( window.scrollY >= 20 && navExpanded == true ){
-            nav.style.paddingTop = 0;
-            nav.style.paddingBottom = 0;
-            nav.style.boxShadow = "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)";
+            nav.classList.add("shrink");
             navExpanded = false;
         }
 
         else if ( window.scrollY == 0 && navExpanded == false ){
-            nav.style.paddingTop = "15px";
-            nav.style.paddingBottom = "15px";
-            nav.style.boxShadow = "none";
+            nav.classList.remove("shrink");
             navExpanded = true;
         }
 
