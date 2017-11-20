@@ -10,8 +10,8 @@ var jumboH2 = document.getElementById("jumboH2");
 
 var navExpanded = true;
 
-if(window.outerWidth > 480){
-    window.addEventListener('scroll', function(e) {
+window.addEventListener('scroll', function(e) {
+    if(window.outerWidth > 480){
         
         if( window.scrollY >= 20 && navExpanded == true ){
             nav.style.paddingTop = 0;
@@ -37,8 +37,8 @@ if(window.outerWidth > 480){
         }
         jumbo.style.backgroundPositionY = "-" + window.scrollY + "px";
 
-    });
-}
+    }
+});
 
 //
 /* Switching sections */
