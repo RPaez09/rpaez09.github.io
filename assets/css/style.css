@@ -73,6 +73,7 @@ body {
 
 .jumbotron {
     min-height: 450px;
+    background-color: #000000;
     background-image: url("../images/main-bg.jpg");
     background-repeat: no-repeat;
     font-family: 'Raleway', sans-serif;
