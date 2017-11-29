@@ -9,7 +9,7 @@ body {
     position: fixed;
     width: 100%;
     background-color: rgba(0,0,0,0);
-    transition: .3s ease-out;
+    transition: .15s ease-out;
     z-index: 99999;
 }
 
@@ -25,14 +25,15 @@ body {
 .navbar .linkbar {
     float: right;
     position: relative;
-    right: 35px;
+    right: 50px;
+    transition: .15s ease-in-out;
 }
 
 .navbar .linkbar li {
     display: inline-block;
     font-size: 26px;
     margin: 20px 15px;
-    transition: .2s ease-in-out;
+    transition: .15s ease-in-out;
     cursor: default;
     color: #FFFFFF;
 }
@@ -167,6 +168,14 @@ body {
     background-color: #FFFFFF;
 }
 
+.portfolio-nametag span{
+    color: #000000;
+    text-align: center;
+    display: inherit;
+    font-size: 22px;
+    font-weight: bold;
+}
+
 footer {
     padding: 40px 25px;
     min-height: 250px;
@@ -249,6 +258,10 @@ footer .icon-wrapper i {
         font-size: 18px;
     }
 
+    .about-left img {
+        padding-right: 0;
+    }
+
     footer .icon-wrapper {
         width: 160px;
     }
@@ -263,6 +276,14 @@ footer .icon-wrapper i {
 
     .jumbotron h2 {
         font-size: 35px;
+    }
+
+    .content h2 {
+        text-align: center;
+    }
+
+    footer h2 { 
+        text-align: center;
     }
 
 }
@@ -286,7 +307,7 @@ footer .icon-wrapper i {
     }
 
     .about-content {
-        padding: 5px 25px 0 0;
+        padding: 5px 0 0 0;
     }
 
     .portfolio-content {

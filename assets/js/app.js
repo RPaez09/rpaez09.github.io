@@ -37,6 +37,7 @@ window.addEventListener('scroll', function(e) {
 //
 /* Switching sections */
 //
+var logoBtn = document.getElementById("logo-btn");
 var aboutBtn = document.getElementById("about-btn");
 var portfolioBtn = document.getElementById("portfolio-btn");
 var contactBtn = document.getElementById("contact-btn");
@@ -90,6 +91,10 @@ function toggleSection(newSection){
         }
     }
 }
+
+logoBtn.addEventListener("click", function(e){
+    toggleSection("about");
+});
 
 aboutBtn.addEventListener("click", function(e){
     toggleSection("about");
