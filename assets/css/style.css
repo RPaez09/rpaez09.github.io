@@ -136,6 +136,11 @@ body {
     flex-shrink: 3;
 }
 
+.about-right p {
+    font-size: 18px;
+    line-height: 1.35;
+}
+
 .portfolio-content {
     padding: 25px 25px 0 25px;
     display: flex;
